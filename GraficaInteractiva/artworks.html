@@ -1,0 +1,113 @@
+<!--DOCTYPE señala que es un documento html5-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- Codificacion de caracteres utilizada -->
+        <meta lang="es"> <!-- Definicion del lenguaje -->
+        <title>Exposiciones - Museo del Louvre</title> <!-- Titulo de la pagina -->
+        <link href="styles/styles.css" rel="stylesheet" type="text/css"><!-- Hoja de estilos -->
+        <link rel="icon" href="images/favicon.svg"> <!-- Icono de la pagina -->
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" height="60px"></a>
+            <a class="menuitem" href="credits.html">Créditos</a>
+            <a class="menuitem" href="history.html">Historia</a>
+            <a class="menuitem" href="artworks.html">Exposiciones</a>
+            <a class="menuitem" href="activities.html">Actividades</a>
+            <a class="menuitem" href="ubication.html">Ubicación</a>
+            <a class="menuitem":active href="index.html">Inicio</a>
+        </nav>
+        <div class="container">
+            <!-- Informacion general de las exposiciones -->
+            <h1>Exposiciones del Museo del Louvre</h1>
+            <p>La colección del Louvre comprende cerca de 300.000 obras anteriores a 1948, de las que se exponen aproximadamente 35.000. 
+                La inmensa colección está organizada de forma temática en diferentes departamentos: antigüedades orientales, antigüedades egipcias, 
+                antigüedades griegas, romanas y etruscas, historia del Louvre y el Louvre medieval, pintura, escultura, objetos de arte, artes gráficas y 
+                arte del Islam.</p>
+
+            <p>El Louvre es el museo de arte más visitado del mundo, famoso por sus obras maestras, especialmente la pintura renacentista 
+                conocida como La Gioconda de Leonardo da Vinci. ​Otras piezas destacadas fueron seleccionadas en 2020 por el propio museo 
+                bajo el título «24 obras imprescindibles». La lista comprende, además de la ya citada pintura, obras como el Código de Hammurabi, 
+                El escriba sentado, La consagración de Napoleón y La Libertad guiando al pueblo, entre otros.</p>
+
+                <div class="submenu centerdiv">
+                    <!-- Menu de navegacion por las dos secciones de la pagina -->
+                    <br>
+                    <h4><a href="#Pinturas">Pinturas más importantes</a></h4> <!-- Vinculo a la primera seccion de la pagina -->
+                    <br>
+                    <h4><a href="#Esculturas">Esculturas más importantes</a></h4> <!-- Vinculo a la segunda seccion de la pagina -->
+                    <br>
+                </div>
+                
+            <!-- Primera seccion de la pagina, con contenedor en tarjeta, borde y contenido centrado -->
+            <section id="Pinturas" class="container solidborder centerdiv">
+                <h1>Pinturas Destacadas</h1><!-- Titulo de la seccion -->
+                <div>
+                    <!-- Imagen de clase imgartworks y descripción de la obra -->
+                    <img class="imgartworks" src="./images/gioconda.jpeg" alt="Gioconda" />
+                    <h2>La Gioconda o Monna Lisa</h2>
+                    <p>Año: 1503 - 1519</p>
+                    <p>Autor: Leonardo Da Vinci</p>
+                    <p>País de origen: Italia</p>
+                </div>
+                <br>
+                <div>
+                    <!-- Imagen de clase imgartworks y descripción de la obra -->
+                    <img class="imgartworks" src="./images/lalibertad.webp" alt="La libertad guiando al pueblo" />
+                    <h2>La Libertad guiando al pueblo</h2>
+                    <p>Año: 1830</p>
+                    <p>Autor: Eugène Delacroix</p>
+                    <p>País de origen: Francia</p>
+                </div>
+                <br>
+                <div>
+                    <!-- Imagen de clase imgartworks y descripción de la obra -->
+                    <img class="imgartworks" src="./images/lasbodas.jpg" alt="Las Bodas de Caná" />
+                    <h2>Las Bodas de Caná</h2>
+                    <p>Año: 1563</p>
+                    <p>Autor: Paolo Veronese</p>
+                    <p>País de origen: Francia</p>
+                </div>
+            </section>
+
+            <!-- Segunda seccion de la pagina, con contenedor en tarjeta, borde y contenido centrado -->
+            <section id="Esculturas" class="container solidborder centerdiv">
+                <h1>Esculturas Destacadas</h1><!-- Titulo de la seccion -->
+                <div>
+                    <!-- Imagen de clase imgartworks y descripción de la obra -->
+                    <img class="imgartworks" src="./images/venus.jpg" alt="La Venus de Milo" />
+                    <h2>La Venus de Milo</h2>
+                    <p>Año: 130 a. C.-100 a. C.</p>
+                    <p>Autor: Alejandro de Antioquía</p>
+                    <p>País de origen: Antigua Grecia</p>
+                </div>
+                <br>
+                <div>
+                    <!-- Imagen de clase imgartworks y descripción de la obra -->
+                    <img class="imgartworks" src="./images/escriba.jpg" alt="El escriba sentado" />
+                    <h2>El Escriba Sentado</h2>
+                    <p>Año: 2480-2350 a. C.</p>
+                    <p>Autor: Desconocido</p>
+                    <p>País de origen: Antiguo Egipto</p>
+                </div>
+                <br>
+                <div>
+                    <!-- Imagen de clase imgartworks y descripción de la obra -->
+                    <img class="imgartworks" src="./images/victoria.jpg" alt="Victoria Alada de Samotracia" />
+                    <h2>Victoria Alada de Samotracia</h2>
+                    <p>Año: 1863</p>
+                    <p>Autor: Desconocido</p>
+                    <p>País de origen: Grecia</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Pie de página con datos de contacto -->
+        <footer>
+            <h4>Juan Sebastián Pachón Carvajal <a href="mailto:jupachonc@unal.edu.co">jupachonc@unal.edu.co</a></p></h4> <!-- Nombre y vinculo para enviar correo -->
+            <h4>Gráfica Interactiva. Universidad Nacional de Colombia</h4><!-- Descripcion de la materia y universidad -->
+        </footer>
+    </body>
+</html>

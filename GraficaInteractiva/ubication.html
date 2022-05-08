@@ -9,17 +9,23 @@
         <link rel="icon" href="images/favicon.svg"> <!-- Icono de la pagina -->
     </head>
     <body>
-        <!-- Barra de navegación común en todos los archivos -->
-        <div class="navbar">
-            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" height="60px"></a>
-            <a class="menuitem" href="credits.html">Créditos</a>
-            <a class="menuitem" href="history.html">Historia</a>
-            <a class="menuitem" href="artworks.html">Exposiciones</a>
-            <a class="menuitem" href="activities.html">Actividades</a>
-            <a class="menuitem" href="ubication.html">Ubicación</a>
-            <a class="menuitem":active href="index.html">Inicio</a>
-        </div>
-
+        <header>
+            <!-- Barra de navegación común en todos los archivos -->
+            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" ></a>
+            <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana -->
+            <label for="btn-menu"><img src="images/menu.png" width="30px"></label>
+            <nav class="navbar">
+              <div class="menunav">
+                    <a class="menuitem" href="credits.html">Créditos</a>
+                    <a class="menuitem" href="history.html">Historia</a>
+                    <a class="menuitem" href="artworks.html">Exposiciones</a>
+                    <a class="menuitem" href="activities.html">Actividades</a>
+                    <a class="menuitem" href="ubication.html">Ubicación</a>
+                    <a class="menuitem":active href="index.html">Inicio</a>
+                </div>  
+            </nav>
+            
+        </header>
         <!-- Contenedor de la información de la pagina -->
         <div class="container">
             <!-- Div para centrar elementos -->
@@ -30,13 +36,13 @@
             </div>
             
             <br/>
-            <p>París es la capital de Francia y constituye una de las ciudades más importantes e influyentes del mundo. 
+            <p class="justify">París es la capital de Francia y constituye una de las ciudades más importantes e influyentes del mundo. 
                 Desde el punto de vista turístico, París es una de las ciudades más visitadas de Europa. El Museo del Louvre se encuentra alojado en el Palacio del Louvre en París, 
                 una fortaleza del siglo XII que fue ampliada y reformada en diversas ocasiones.
                  Antes de que se convirtiera en museo, algunos monarcas como Carlos V y Felipe II utilizaron 
                  el palacio como residencia real en la que acumulaban sus colecciones artísticas.</p>
             <h2>¿Cómo llegar?</h2>
-            <p>Para llegar al museo del Louvre podemos hacer uso de las siguientes líneas de transporte público de la ciudad</p>
+            <p class="justify">Para llegar al museo del Louvre podemos hacer uso de las siguientes líneas de transporte público de la ciudad</p>
             <!-- Lista de transportes disponibles -->
             <ul>
                 <li>Metro: Palais-Royal - Musée du Louvre, líneas 1 y 7.</li>

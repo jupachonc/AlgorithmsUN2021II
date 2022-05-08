@@ -5,6 +5,12 @@
     src: url('../fonts/Roboto/Roboto-Regular.ttf'); /* Ubicacion del archivo .ttf de la fuente */
 }
 
+/*
+
+================== Definición de estilos generales ====================
+
+*/
+
 
 /* Definición de la fuente para todos los estilos */
 *{
@@ -16,30 +22,37 @@ body{
     background-color: #2F2F2F;
 }
 
+/* Justificar el texto del parrafos*/
+.justify{
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+
 /* ============= Barra de Navegación =====================*/
 
 /* Margenes y alturas para el logo */
 .logoNoPadding {
-   padding: 10px;
-   margin-left: 50px;
-   height: 59%
+   float: left;
+   padding: 15px;
+   margin-left: 20px;
+   max-height: 30px;
 }
 
 /* Añadir fondo negro a la barra de navegación. */
 .navbar {
     background: #000000;
-    overflow: hidden;
     z-index: 5; /* va a estar encima de todo */
     height: 60px;
-    padding: top 10px;
     border-radius: 10px;/* redondear bordes */
     padding-right: 50px;
   
  }
+
  
  /* Dar estilo a los elementos dentro de la barra de navegación. */
  .menuitem {
-    float: right; /* Los elementos flotan a la derecha */
+    float: right;
     color: #f2f2f2;
     text-align: center; /* Alinear el texto en el centro */
     padding: 15px 16px;
@@ -100,6 +113,11 @@ body{
 .centerdiv{
    text-align: center
 }
+ /* alinear listas del contenido centrado a la izquierda*/
+.centerdiv ol{
+   display: inline-block; 
+   text-align: left; 
+}
 
  /* alinear contenido al centro*/
 footer{
@@ -123,26 +141,50 @@ footer a{
    height: 400px
 }
 
+ /* estilo del contenedor del submenú*/
+.submenu h4{
+   display: flex;
+   margin:auto;
+   width: 50%;
+}
+
  /* estilo de los enlaces del submenú*/
 .submenu h4 a {
-   margin: 15px;
+   margin: 5px;
    padding: 10px;
    background-color: #512da8;
    color: white;
    border-radius: 15px;
+   width: 100%;
+   text-decoration: none;
+   transition: all 2s; 
+
 }
 
+ /* estilo del contenedor de boton de compra*/
+ .botonCompra{
+    width: 100%;
+    display: flex;
+ }
  /* estilo de boton de compra*/
 .botonCompra a {
-   padding: 20px;
+   padding: 15px;
    background-color: green;
    color: white;
    border-radius: 15px;
+   text-decoration: none;
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.2em;
+   margin: auto;
+   width: 30%;
+   
 }
 
  /* Estilos para la tabla*/
 
-.tftable {font-size:12px;
+.tftable {
+   font-size:12px;
    color:#fbfbfb;
    width:1000px;
    border-width: 1px;
@@ -189,4 +231,159 @@ table a { /* Dar estilos a los enlaces de las tablas */
 .linkscredits { /* Dar estilos a los enlaces */
    color: blue;
    text-decoration: none; /* Quitar cualquier decaracion (estilo por defecto) para los enlaces */
+}
+
+/* No dejar visible el checkbox */
+#btn-menu{
+   display: none;
+}
+
+/* Posición y visibilidad del icono de menu */
+header label {
+   margin-top: 18px;
+   margin-left: 20px;
+   display: none;
+}
+/* Cambiar el puntero al pasar por encima */
+header label:hover {
+   cursor: pointer;
+}
+
+
+/* Estilo iconos redes sociales */
+.social{
+   max-width: 60px;
+}
+
+/* 
+=========================== Estilos Adaptativos ===================================
+*/
+
+/* Telefono celular (480-800) */
+@media only screen and (max-width: 800px) {
+
+   /* Hacer visible icono del menú */
+   header label {
+      position: absolute;
+      display: block;
+      
+   }
+
+   /* Mover a la derecha logo de la navbar */
+   .logoNoPadding{
+      float: right;
+   }
+
+   /* Transformar menú en lista y esconderlo */
+   .menunav{
+      display: flex;
+      flex-direction: column-reverse;
+      top: 80px;
+      position: absolute;
+      max-width: 180px;
+      background-color: #000000;
+      margin-left: -60%;
+      transition: all 2s; 
+      
+   }
+
+   /* Estilo de los items del menu */
+   .menuitem{
+      width: 79%;
+      font-size: 1.3em;
+   }
+
+
+   /* Accion de abrir menu */
+   #btn-menu:checked ~ nav .menunav {
+      margin: 0px;
+  } 
+
+  /* Estilos de imagenes para pantallas pequeñás */
+   .rightimg{
+      width: 90%;
+      height: 100%;
+      margin-left: 0px;
+      margin-bottom: 20px;
+      float: center
+   }
+
+   .topimg{
+      width: 100%;
+   }
+
+   .intextimg{
+      width: 95%;
+      height: 100%
+   }
+   .imgartworks{
+      width: 90%;
+      height: 100%
+   }
+
+  /* Estilos de tablas para pantallas pequeñas */
+   .tftable{
+      width: 100%;
+      overflow-x: auto;
+   }
+
+  /* Estilos de boton para pantallas pequeñas */
+   .botonCompra a{
+      width: 80%
+   }
+}
+
+/* Tableta o portatil (800-1200) */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+   /* Estilos de nmavegación para pantallas medianas */
+   .navbar{
+      padding-right: 10px;
+   }
+   .menunav{
+      height: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      max-width: 50%;
+      float: right;
+   }
+   .menuitem{
+      height: 40%;
+      padding: 18px 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+
+   }
+
+  /* Estilos de imagenes para pantallas pequeñás */
+   .topimg{
+      width: 100%;
+   }
+
+   .intextimg{
+      max-height: 400px;
+   }
+
+  /* Estilos de tablas para pantallas medianas */
+   .tftable{
+      width: 100%;
+      overflow-x: auto;
+   }
+
+  /* Estilos de boton para pantallas medianas */
+   .botonCompra a{
+      width: 60%
+   }
+}
+
+/* Pantallas grandes (>1200) */
+/*
+Se emplean pocos estilos dado que los estilos iniciales
+fueron diseñados para este tipo de pantalla
+*/
+@media only screen and (min-width: 1200px){
+   /* Aumentar el tamaño de la fuente para pantallas grandes */
+   p{
+      font-size: 1.2em
+   }
 }

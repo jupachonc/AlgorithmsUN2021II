@@ -9,24 +9,32 @@
         <link rel="icon" href="images/favicon.svg"> <!-- Icono de la pagina -->
     </head>
     <body>
-        <nav class="navbar">
-            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" height="60px"></a>
-            <a class="menuitem" href="credits.html">Créditos</a>
-            <a class="menuitem" href="history.html">Historia</a>
-            <a class="menuitem" href="artworks.html">Exposiciones</a>
-            <a class="menuitem" href="activities.html">Actividades</a>
-            <a class="menuitem" href="ubication.html">Ubicación</a>
-            <a class="menuitem":active href="index.html">Inicio</a>
-        </nav>
+        <header>
+            <!-- Barra de navegación común en todos los archivos -->
+            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" ></a>
+            <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana -->
+            <label for="btn-menu"><img src="images/menu.png" width="30px"></label>
+            <nav class="navbar">
+              <div class="menunav">
+                    <a class="menuitem" href="credits.html">Créditos</a>
+                    <a class="menuitem" href="history.html">Historia</a>
+                    <a class="menuitem" href="artworks.html">Exposiciones</a>
+                    <a class="menuitem" href="activities.html">Actividades</a>
+                    <a class="menuitem" href="ubication.html">Ubicación</a>
+                    <a class="menuitem":active href="index.html">Inicio</a>
+                </div>  
+            </nav>
+            
+        </header>
         <div class="container">
             <!-- Informacion general de las exposiciones -->
             <h1>Exposiciones del Museo del Louvre</h1>
-            <p>La colección del Louvre comprende cerca de 300.000 obras anteriores a 1948, de las que se exponen aproximadamente 35.000. 
+            <p class="justify">La colección del Louvre comprende cerca de 300.000 obras anteriores a 1948, de las que se exponen aproximadamente 35.000. 
                 La inmensa colección está organizada de forma temática en diferentes departamentos: antigüedades orientales, antigüedades egipcias, 
                 antigüedades griegas, romanas y etruscas, historia del Louvre y el Louvre medieval, pintura, escultura, objetos de arte, artes gráficas y 
                 arte del Islam.</p>
 
-            <p>El Louvre es el museo de arte más visitado del mundo, famoso por sus obras maestras, especialmente la pintura renacentista 
+            <p class="justify">El Louvre es el museo de arte más visitado del mundo, famoso por sus obras maestras, especialmente la pintura renacentista 
                 conocida como La Gioconda de Leonardo da Vinci. ​Otras piezas destacadas fueron seleccionadas en 2020 por el propio museo 
                 bajo el título «24 obras imprescindibles». La lista comprende, además de la ya citada pintura, obras como el Código de Hammurabi, 
                 El escriba sentado, La consagración de Napoleón y La Libertad guiando al pueblo, entre otros.</p>
@@ -35,7 +43,6 @@
                     <!-- Menu de navegacion por las dos secciones de la pagina -->
                     <br>
                     <h4><a href="#Pinturas">Pinturas más importantes</a></h4> <!-- Vinculo a la primera seccion de la pagina -->
-                    <br>
                     <h4><a href="#Esculturas">Esculturas más importantes</a></h4> <!-- Vinculo a la segunda seccion de la pagina -->
                     <br>
                 </div>
@@ -65,7 +72,7 @@
                     <!-- Imagen de clase imgartworks y descripción de la obra -->
                     <img class="imgartworks" src="./images/lasbodas.jpg" alt="Las Bodas de Caná" />
                     <h2>Las Bodas de Caná</h2>
-                    <p>Año: 1563</p>
+                    <p class="nojustify">Año: 1563</p>
                     <p>Autor: Paolo Veronese</p>
                     <p>País de origen: Francia</p>
                 </div>

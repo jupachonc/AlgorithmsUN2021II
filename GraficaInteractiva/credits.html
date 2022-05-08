@@ -7,20 +7,30 @@
         <title>Créditos - Museo del Louvre</title> <!-- Titulo de la pagina -->
         <link href="styles/styles.css" rel="stylesheet" type="text/css"><!-- Hoja de estilos -->
         <link rel="icon" href="images/favicon.svg"> <!-- Icono de la pagina -->
+
     </head>
     <body>
-        <div class="navbar">
-            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" height="60px"></a>
-            <a class="menuitem" href="credits.html">Créditos</a>
-            <a class="menuitem" href="history.html">Historia</a>
-            <a class="menuitem" href="artworks.html">Exposiciones</a>
-            <a class="menuitem" href="activities.html">Actividades</a>
-            <a class="menuitem" href="ubication.html">Ubicación</a>
-            <a class="menuitem":active href="index.html">Inicio</a>
-        </div>
-        <div class="container">
+        <header>
+            <!-- Barra de navegación común en todos los archivos -->
+            <a href="index.html"><img class="logoNoPadding" src="images/logo.png" alt="Louvre Logo" ></a>
+            <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana -->
+            <label for="btn-menu"><img src="images/menu.png" width="30px"></label>
+            <nav class="navbar">
+              <div class="menunav">
+                    <a class="menuitem" href="credits.html">Créditos</a>
+                    <a class="menuitem" href="history.html">Historia</a>
+                    <a class="menuitem" href="artworks.html">Exposiciones</a>
+                    <a class="menuitem" href="activities.html">Actividades</a>
+                    <a class="menuitem" href="ubication.html">Ubicación</a>
+                    <a class="menuitem":active href="index.html">Inicio</a>
+                </div>  
+            </nav>
+            
+        </header>
+        <div class="container centerdiv">
 
             <h1>Fuentes</h1>
+            <h2>Información e Imágenes</h2>
             <ol>
                 <!-- Enumeracion para presentar los recursos sacados de otros sitios -->
                 <li><a class="linkscredits" href="https://es.wikipedia.org/wiki/Museo_del_Louvre" target="_blank">Museo del Louvre: Wikipedia - The free encyclopedia</a></li> <!-- Primer elemento de la lista -->
@@ -35,6 +45,20 @@
                 <li><a class="linkscredits" href="https://www.traveler.es/viajes-urbanos/articulos/museo-del-louvre-datos-curiosos-historia-cosas-que-no-sabias/20903" target="_blank">Traveler - 13 cosas que no sabías del Louvre</a></li>
 
             </ol>
+
+                                   
+
+                <!-- Mapa de navegacion -->
+                <h1>Mapa de Navegación</h1>
+                <img class="topimg" src="images/mapa_de_navegacion.png" alt="Mapa de Navegación">
+                <br>
+                <!-- Información del autor -->
+                <h1>Autor</h1>
+                <h2>Juan Sebastián Pachón Carvajal</h2>
+                <h3>Estudiante Ingeniería de Sistemas y Computación</h3>
+                <h4>Universidad Nacional de Colombia - Sede Bogotá</h4>
+                <a href="https://www.linkedin.com/in/sebastianpachonc" target="_blank"><img class="social" src="images/linkedin.png"></a>
+
 
         </div>
 
